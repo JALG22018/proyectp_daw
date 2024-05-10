@@ -5,110 +5,117 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contáctanos</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
-    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript">
       emailjs.init("wpXqdH21THOWaW59s");
     </script>
-    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="contact-html">
+  <body class="bg-purple-100 text-purple-900 mx-4 md:mx-8 lg:mx-16 xl:mx-20">
     <div class="py-6 text-center">
-      <h1 class="text-4xl font-bold">Contactanos/h1>
+      <h1 class="titulo-pagina-html-de-contacto">CONTÁCTANOS</h1>
     </div>
-    <div class="contact-info">
-      <h1 class="section-title-contact">Integrantes</h1>
-      <div class="grupo">
-        <div class="integrante">
-          <p class="carnet">Carnet: TM22012</p>
-          <p class="correo">Correo electrónico: tm22012@ues.edu.sv</p>
-        </div>
-        <div class="integrante">
-          <p class="carnet">Carnet: LG22018</p>
-          <p class="correo">Correo electrónico: lg22018@ues.edu.sv</p>
-        </div>
-        <div class="integrante">
-          <p class="carnet">Carnet: JQ22003</p>
-          <p class="correo">Correo electrónico: jq22003@ues.edu.sv</p>
-        </div>
-        <div class="integrante">
-          <p class="carnet">Carnet: MA22054</p>
-          <p class="correo">Correo electrónico: ma22054@ues.edu.sv</p>
-        </div>
-      </div>
-
-      <h1 class="section-title-contact">Redes Sociales UES</h1>
-      <div class="section-title-social">
-        <a
-          href="https://www.facebook.com/UESoficial.SV/"
-          target="_blank"
-          class="logo-container"
-        >
-          <img src="images/facebook-icon.png" alt="Facebook" />
-        </a>
-        <a
-          href="https://twitter.com/UESoficial"
-          target="_blank"
-          class="logo-container"
-        >
-          <img src="images/x-icon.png" alt="Twitter/X" />
-        </a>
-        <a
-          href="https://www.instagram.com/uesoficial/?hl=es"
-          target="_blank"
-          class="logo-container"
-        >
-          <img src="images/instagram-icon.png" alt="Instagram" />
-        </a>
-      </div>
-
-      <div class="whatsapp">
-        <a
-          href="https://api.whatsapp.com/send?phone=50370384774"
-          target="_blank"
-          class="inline-block"
-        >
-          <button
-            class="whatsapp-button bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded"
-          >
-            WhatsApp
-          </button>
-        </a>
-      </div>
-    </div>
-
-    <div class="section-title-form">
-      <div class="contact-form">
-        <h1 class="section-title-contact">Formulario de Contacto</h1>
-        <div class="form-group">
-          <label for="name">Nombre</label>
-          <input type="text" id="name" />
-        </div>
-        <div class="form-group">
-          <label for="email">E-mail</label>
-          <input type="email" id="email" />
-        </div>
-        <div class="form-group">
-          <label for="subject">Asunto</label>
-          <input type="text" id="subject" />
-        </div>
-        <div class="form-group">
-          <label for="message">Mensaje</label>
-          <textarea id="message"></textarea>
-        </div>
-        <div class="form-group">
-          <div class="form-group flex justify-center">
-            <button
-              onclick="sendMessage();"
-              class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded"
-            >
-              Enviar
-            </button>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="bg-purple-200 p-6 mt-4 mb-8 rounded">
+        <h2 class="titulos-html-de-contacto">Integrantes</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="bg-purple-400 p-4 rounded">
+            <p class="font-bold">Carnet:</p>
+            <p class="text-purple-700">TM22012</p>
+            <p class="font-bold">Correo electrónico:</p>
+            <p class="text-purple-700">tm22012@ues.edu.sv</p>
           </div>
+          <div class="bg-purple-400 p-4 rounded">
+            <p class="font-bold">Carnet:</p>
+            <p class="text-purple-700">Carnet: LG22018</p>
+            <p class="font-bold">Correo electrónico:</p>
+            <p class="text-purple-700">lg22018@ues.edu.sv</p>
+          </div>
+          <div class="bg-purple-400 p-4 rounded">
+            <p class="font-bold">Carnet:</p>
+            <p class="text-purple-700">JQ22003</p>
+            <p class="font-bold">Correo electrónico:</p>
+            <p class="text-purple-700">jq22003@ues.edu.sv</p>
+          </div>
+          <div class="bg-purple-400 p-4 rounded">
+            <p class="font-bold">Carnet:</p>
+            <p class="text-purple-700">MA22054</p>
+            <p class="font-bold">Correo electrónico:</p>
+            <p class="text-purple-700">ma22054@ues.edu.sv</p>
+          </div>
+        </div>
+        <div class="bg-purple-200 p-4 rounded">
+          <h2 class="titulos-html-de-contacto">Redes Sociales UES</h2>
+          <div class="flex justify-center gap-4 m-4">
+            <a href="https://www.facebook.com/UESoficial.SV/" target="_blank">
+              <img src="images/facebook-icon.png" alt="Facebook" />
+            </a>
+            <a href="https://twitter.com/UESoficial" target="_blank">
+              <img src="images/x-icon.png" alt="Twitter/X" />
+            </a>
+            <a
+              href="https://www.instagram.com/uesoficial/?hl=es"
+              target="_blank"
+            >
+              <img src="images/instagram-icon.png" alt="Instagram" />
+            </a>
+          </div>
+          <div class="mt-4 flex justify-center">
+            <a
+              href="https://api.whatsapp.com/send?phone=50370384774"
+              target="_blank"
+            >
+              <button
+                class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded"
+              >
+                WhatsApp
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="bg-purple-200 p-6 mt-4 mb-8 rounded">
+        <h2 class="titulos-html-de-contacto">Formulario de Contacto</h2>
+        <div class="mt-4">
+          <label for="name" class="block text-purple-800">Nombre</label>
+          <input
+            type="text"
+            id="name"
+            class="px-4 py-2 rounded border border-purple-300 w-full"
+          />
+        </div>
+        <div class="mt-4">
+          <label for="email" class="block text-purple-800">E-mail</label>
+          <input
+            type="email"
+            id="email"
+            class="px-4 py-2 rounded border border-purple-300 w-full"
+          />
+        </div>
+        <div class="mt-4">
+          <label for="subject" class="block text-purple-800">Asunto</label>
+          <input
+            type="text"
+            id="subject"
+            class="px-4 py-2 rounded border border-purple-300 w-full"
+          />
+        </div>
+        <div class="mt-4">
+          <label for="message" class="block text-purple-800">Mensaje</label>
+          <textarea
+            id="message"
+            class="px-4 py-2 rounded border border-purple-300 w-full"
+          ></textarea>
+        </div>
+        <div class="mt-4">
+          <button
+            onclick="sendMessage();"
+            class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded"
+          >
+            Enviar
+          </button>
         </div>
       </div>
     </div>
