@@ -1,30 +1,14 @@
-/* Página Contactanos*/
-.titulo-pagina-html-de-contacto {
+.boton {
+  background-color: purple;
+  color: white;
   font-weight: bold;
-  color: black;
-  font-size: 2.25rem;
-  font-family: "Gentium Plus", serif;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-.titulos-html-de-contacto {
-  font-weight: bold;
-  color: purple;
-  font-size: 2.25rem;
-  font-family: "Gentium Plus", serif;
-  text-align: center;
-}
-
-.titulo-pagina-html-de-equipo {
-  font-weight: bold;
-  color: black;
-  font-size: 2.25rem;
-  font-family: "Gentium Plus", serif;
-}
-
-.titulos-html-de-equipo {
-  font-weight: bold;
-  color: purple;
-  font-size: 2.25rem;
-  font-family: "Gentium Plus", serif;
-  text-align: center;
+.boton:hover {
+  background-color: #6c63ff;
 }
