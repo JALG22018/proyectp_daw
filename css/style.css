@@ -12,3 +12,7 @@
 .boton:hover {
   background-color: #6c63ff;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
