@@ -1,3 +1,30 @@
-h1{
-  color:blue;
+/* Página Contactanos*/
+.titulo-pagina-html-de-contacto {
+  font-weight: bold;
+  color: black;
+  font-size: 2.25rem;
+  font-family: "Gentium Plus", serif;
+}
+
+.titulos-html-de-contacto {
+  font-weight: bold;
+  color: purple;
+  font-size: 2.25rem;
+  font-family: "Gentium Plus", serif;
+  text-align: center;
+}
+
+.titulo-pagina-html-de-equipo {
+  font-weight: bold;
+  color: black;
+  font-size: 2.25rem;
+  font-family: "Gentium Plus", serif;
+}
+
+.titulos-html-de-equipo {
+  font-weight: bold;
+  color: purple;
+  font-size: 2.25rem;
+  font-family: "Gentium Plus", serif;
+  text-align: center;
 }
