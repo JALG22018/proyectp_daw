@@ -1,31 +1,81 @@
 <html>
 
 <head>
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/output.css">
+  <script src="js/script.js"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
+  <title>Inicio</title>
 </head>
-
-
-<body>
-  <h1>Catering Experts</h1>
+<body class="bg-purple-100 text-purple-900 dark:bg-black dark:text-white">
   <header>
-    <div>
-      <a href="index.html">Inicio</a>
-      <a href="about.html">Quienes somos</a>
-      <a href="customers.html">Nuestros Clientes</a>
-      <a href="team.html">Equipo</a>
-      <a href="contact.html">Contactanos</a>
+    <nav class="relative px-1 py-1 flex justify-between items-center whitespace-nowrap">
+      <a class="text-3xl font-bold leading-none" href="#">
+        <img class="h-10" src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Escudo_de_la_Universidad_de_El_Salvador.svg" alt="noimage">
+      </a>
+      <div class="lg:hidden">
+        <button class="navbar-burger flex items-center text-blue-600 p-3">
+          <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <title>Mobile menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+          </svg>
+        </button>
+      </div>
+      <ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:items-center lg:w-auto lg:space-x-20">
+        <li><a class="text-sm text-gray-400 hover:text-purple-900" href="index.html">Inicio</a></li>
+        <li><a class="text-sm text-gray-400 hover:text-purple-900" href="about.html">Quienes somos</a></li>
+        <li><a class="text-sm text-gray-400 hover:text-purple-900" href="#">Nuestros Clientes</a></li>
+        <li><a class="text-sm text-gray-400 hover:text-purple-900" href="#">Equipo</a></li>
+        <li><a class="text-sm text-gray-400 hover:text-purple-900" href="contact.html">Contactanos</a></li>
+      </ul>
+    </nav>
+    <div class="navbar-menu relative z-50 hidden">
+      <div class="navbar-backdrop fixed inset-0 opacity-10"></div>
+      <nav class="fixed top-0 right-0 bottom-0 flex flex-col w-1/3 max-w-sm py-6 px-6 overflow-y-auto">
+        <div class="flex items-center mb-8">
+          <button class="navbar-close">
+            <svg class="h-6 w-6 fixed right-3 top-3 text-gray-400 cursor-pointer hover:text-purple-900" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+        <div>
+          <ul>
+            <li class="mb-1">
+              <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-purple-200 hover:text-purple-900 rounded" href="index.html">Inicio</a>
+            </li>
+            <li class="mb-1">
+              <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-purple-200 hover:text-purple-900 rounded" href="about.html">Quienes somos</a>
+            </li>
+            <li class="mb-1">
+              <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-purple-200 hover:text-purple-900 rounded" href="#">Nuestros Clientes</a>
+            </li>
+            <li class="mb-1">
+              <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-purple-200 hover:text-purple-900 rounded" href="#">Equipoo</a>
+            </li>
+            <li class="mb-1">
+              <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-purple-200 hover:text-purple-900 rounded" href="contact.html">Contactanos</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mt-auto">
+          <p class="my-4 text-xs text-center text-gray-400">
+            <span>Copyright © 2021</span>
+          </p>
+        </div>
+      </nav>
     </div>
+    
   </header>
-
+  <div class="flex flex-col content-between items-center ">
+    <h1>Catering Experts</h1>
   <article>
     <figure>
       <img src="/images/Postre.png" width="20%">
       <figcaption>Tu mejor opcion en catering</figcaption>
     </figure>
   </article>
+  </div>
   </div>
 </body>
 
