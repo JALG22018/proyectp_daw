@@ -9,32 +9,33 @@
 </head>
 <body class="bg-purple-100 text-purple-900 dark:bg-black dark:text-white">
   <header>
-    <nav class="relative px-1 py-1 flex justify-between items-center whitespace-nowrap">
-      <a class="text-3xl font-bold leading-none" href="#">
-        <img class="h-10" src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Escudo_de_la_Universidad_de_El_Salvador.svg" alt="noimage">
-      </a>
+    <nav class="relative px-1 py-1 xl:h-24 lg:h-24 flex justify-between items-center whitespace-nowrap">
       <div class="lg:hidden">
-        <button class="navbar-burger flex items-center text-blue-600 p-3">
-          <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-            <title>Mobile menu</title>
+        <button class="navbar-burger fixed right-1  text-blue-600 p-3">
+          <svg class="block h-8 w-8 fill-current navbar-button " viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
           </svg>
         </button>
       </div>
       <ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:items-center lg:w-auto lg:space-x-20">
-        <li><a class="text-sm text-gray-400 hover:text-purple-900" href="index.html">Inicio</a></li>
-        <li><a class="text-sm text-gray-400 hover:text-purple-900" href="about.html">Quienes somos</a></li>
-        <li><a class="text-sm text-gray-400 hover:text-purple-900" href="#">Nuestros Clientes</a></li>
-        <li><a class="text-sm text-gray-400 hover:text-purple-900" href="#">Equipo</a></li>
-        <li><a class="text-sm text-gray-400 hover:text-purple-900" href="contact.html">Contactanos</a></li>
+        <li><a class="text-3xl text-gray-400 hover:text-purple-900" href="index.html">Inicio</a></li>
+        <li><a class="text-3xl text-gray-400 hover:text-purple-900" href="about.html">Quienes somos</a></li>
+        <li><a class="text-3xl text-gray-400 hover:text-purple-900" href="#">Nuestros Clientes</a></li>
+        <li><a class="text-3xl text-gray-400 hover:text-purple-900" href="#">Equipo</a></li>
+        <li><a class="text-3xl text-gray-400 hover:text-purple-900" href="contact.html">Contactanos</a></li>
       </ul>
     </nav>
-    <div class="navbar-menu relative z-50 hidden">
+    <nav class="xl:hidden lg:hidden flex justify-between items-center whitespace-nowrap">
+      <a href="/">
+        <img class="h-14 pl-4 pt-1" src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Escudo_de_la_Universidad_de_El_Salvador.svg" alt="noimage">
+      </a>
+    </nav>
+    <div class="navbar-menu relative pb-20 z-50 hidden">
       <div class="navbar-backdrop fixed inset-0 opacity-10"></div>
-      <nav class="fixed top-0 right-0 bottom-0 flex flex-col w-1/3 max-w-sm py-6 px-6 overflow-y-auto">
+      <nav class="fixed top-0 right-0 bottom-0 flex flex-col w-1/3 max-w-sm py-6 px-6 overflow-y-auto bg-purple-100 dark:bg-black">
         <div class="flex items-center mb-8">
           <button class="navbar-close">
-            <svg class="h-6 w-6 fixed right-3 top-3 text-gray-400 cursor-pointer hover:text-purple-900" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg class="h-8 w-8 fixed right-3 top-3 text-gray-400 cursor-pointer hover:text-purple-900" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
             </svg>
           </button>
