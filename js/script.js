@@ -1,3 +1,4 @@
+
 function sendMessage() {
   var name = document.querySelector("#name").value;
   var email = document.querySelector("#email").value;
@@ -135,3 +136,16 @@ botonAdelante.addEventListener('click', () => {
 }
 );
 
+function changeImage() {
+  chosenImage++;
+  if (chosenImage >= images.length) {
+    chosenImage = 0;
+  }
+  imageContainer.style.backgroundImage = `url(${images[chosenImage].url})`;
+}
+
+// Call changeImage initially to set the first image
+changeImage();
+
+// Start an interval to call changeImage every second
+const intervalId = setInterval(changeImage, 2000);
